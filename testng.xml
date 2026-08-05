@@ -1,80 +1,31 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
-<suite name="MYPC test">
+<suite name="MYPC Suite">
 
-<test name="Somke test">
+    <listeners>
+        <listener class-name="com.mypc.automation.reports.tests.ExtentListener"/>
+    </listeners>
 
-<classes>
-
-<class name="POM.LoginTestCase"/>
-
-<class name="POM.AdminTest"/>
-
-<class name="POM.UserTest"/>
-
-<class name="POM.LocationTestCase"/>
-
-<class name="POM.RoomTestCase"/>
-
-<class name="POM.DeskTestCase"/>
-
-<class name="POM.ComputerTestCase"/>
-
-<class name="POM.Reserve_Room_TestCase"/>
-
-<class name="POM.Reserve_Desk_TestCase"/>
-
-<class name="POM.Reserve_Computer_TestCase"/>
-
-<class name="POM.Tools_TestCase"/>
-
-<class name="POM.UserTest"/>
-
-<class name="POM.ComputerTestCase"/>
-
-<class name="CreatingTags.DeskTags_TestCase"/>
-
-<class name="CreatingTags.RoomTags_TestCase"/>
-
-<class name="CreatingTags.UserTagsTestCase"/>
-
-<class name="CreatingTags.ComputerTestCase"/>
-
-<class name="BookingRulesTags.DeskTestCase"/>
-
-<class name="BookingRulesTags.RoomTestCase"/>
-
-<class name="BookingRulesTags.UsersTestCase"/>
-<class name="BookingRulesTags.ComputersTestCase"/>
-
-<class name="BookingRulesTestCase.DeskProfileTestCase"/>
-
-<class name="BookingRulesTestCase.DeskTestCase"/>
-
-<class name="BookingRulesTestCase.RoomBookingTestCase"/>
-
-<class name="BookingRulesTestCase.RoomTestCase"/>
-
-<class name="Admin_Policy_TestCase.AdminPolicyTestCase"/>
-
-<class name="Admin_Policy_TestCase.AutomationTags"/>
-
-
-
-
-
-<class name="POM.Sign_IN_TestCase"/>
-
-
-</classes>
-
-</test>
+    <test name="Regression Test">
+        <classes>
+            <class name="com.mypc.automation.reports.tests.LoginTestCase"/>
+            <class name="com.mypc.automation.reports.tests.AdminTest"/>
+            <class name="com.mypc.automation.reports.tests.UserTest"/>
+            <class name="com.mypc.automation.reports.tests.LocationTestCase"/>
+            <class name="com.mypc.automation.reports.tests.RoomTestCase"/>
+            <class name="com.mypc.automation.reports.tests.DeskTestCase"/>
+            <class name="com.mypc.automation.reports.tests.ComputerTestCase"/>
+            <class name="com.mypc.automation.reports.tests.Tools_TestCase"/>
+            <class name="com.mypc.automation.reports.tests.usersbooking.ComputersTestCase"/>
+            <class name="com.mypc.automation.reports.tests.usersbooking.DeskTestCase"/>
+            <class name="com.mypc.automation.reports.tests.usersbooking.RoomTestCase"/>
+            <class name="com.mypc.automation.reports.tests.usersbooking.UsersTestCase"/>
+            <class name="com.mypc.automation.reports.tests.creatingtags.UserTagsTestCase"/> 
+            <class name="com.mypc.automation.reports.tests.creatingtags.RoomTags_TestCase"/>
+            <class name="com.mypc.automation.reports.tests.creatingtags.DeskTags_TestCase"/>
+            <class name="com.mypc.automation.reports.tests.creatingtags.ComputerTestCase"/>
+        
+        </classes>
+    </test>
 
 </suite>
-
-
-
-
-
-
