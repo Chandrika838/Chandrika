@@ -1,43 +1,32 @@
-Feature: Room functionality
+Feature: Admin Room functionality
 
-  Scenario: Verify add new room
+Scenario: Verify Add Room
 
     Given I open the application
-
     When I enter valid email
     And I enter valid password
     And I click the login button
 
-    Then Room menu should be displayed
+    And I open the Admin menu
+    And I open the Room menu
+    And I click Room Add New
 
-    When I open Room menu
+    And I enter room name
+    And I select room location
 
-    Then Add New button should be displayed
+    And I open Room Advanced Options
+    And I enable Room camera
+    And I enable Room monitor
+    And I enable Room projector
 
-    When I click Room Add New
+    Then Room preparation dropdown should be displayed
+    And I select Room preparation
 
-    Then Room Name field should be displayed
+    And I select Room check box
 
-    When I enter the room name
-
-    Then Location dropdown should be displayed
-
-    When I select the location
-
-    When I open Room Advanced Options
-
-    Then Preparation dropdown should be displayed
-
-    When I select the preparation time 
-    
-    And I select the check in required checkbox 
-    
     And I open Room Tags and Booking Rules
-    
-    And I click Tags Add button
-    
-    And I select room  tag
-    
-    Then Room Submit button should be displayed
+    And I click Room Add
+    And I select Room tag
 
+    Then Room Submit button should be displayed
     When I click Room Submit button
